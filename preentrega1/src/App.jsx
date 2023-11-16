@@ -9,7 +9,7 @@ function App() {
       <Navbar></Navbar>
       <Producto Titulo= 'Producto' descripcion='Mostramos Producto'/>
     </div>
-    
+  
   )
 }
 
