@@ -1,13 +1,15 @@
 import './App.css'
 import Navbar from './components/Navbar'
+import Producto from './components/Producto'
 function App() {
 
   return (
-    <>
+    
     <div className='App'>
       <Navbar></Navbar>
-      </div>
-    </>
+      <Producto Titulo= 'Producto' descripcion='Mostramos Producto'/>
+    </div>
+    
   )
 }
 
