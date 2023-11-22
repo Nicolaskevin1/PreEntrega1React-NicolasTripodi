@@ -1,10 +1,24 @@
-export default function Navbar() {
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import Cartwidget from './Cartwidget/Cartwidget';
+
+export default function NavBar() {
     return (
-        <div className="navbar"> 
-            <h3>Inicio</h3>
-            <h3>Contacto</h3>
-            <h3>Productos</h3>
-            <h3>Nosotros</h3>
-        </div>
-    )
+        <>
+      <Navbar bg="dark" data-bs-theme="dark">
+        <Container>
+          <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+          <Nav className="me-auto">
+            <Nav.Link href="#home">Inicio</Nav.Link>
+            <Nav.Link href="#features">Comidas</Nav.Link>
+            <Nav.Link href="#pricing">Precio</Nav.Link>
+            <Nav.Link href="#pricing"><Cartwidget/></Nav.Link>
+          </Nav>
+        </Container>
+      </Navbar>
+      </>
+      );
 }
+
+
